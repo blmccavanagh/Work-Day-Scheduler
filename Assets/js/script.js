@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 // Function to update time
-setInterval(updateTimeSensitiveFunctions, 1000)
+setInterval(updateTimeSensitiveFunctions(), 1000)
 
 // Function to update scheduler based on current time
 function updateTimeSensitiveFunctions(){
@@ -34,13 +34,13 @@ function displayCurrentDateAndTime(){
 // - add class .future
 
 function colorCode(){
+    // Use the value from now.format
     // Convert string value of hour to number value
     let currentTime = parseInt(now.format('h'));
-// Use the value from now.format
-// Create for loop
-// if less than current time .past
-// if current time .present
-// if more than current time .future
+    // Create for loop
+    // if less than current time .past
+    // if current time .present
+    // if more than current time .future
 for (let i = 8; i <= 18; i++) {
     if (i < currentTime) {
         $('#' + i).addClass("past");
