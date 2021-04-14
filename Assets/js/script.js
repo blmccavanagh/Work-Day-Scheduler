@@ -5,11 +5,12 @@ let now = moment();
 $(document).ready(function(){
 
     updateTimeSensitiveFunctions();
+    setInterval(updateTimeSensitiveFunctions, 1000);
 
 });
 
 // Function to update time
-setInterval(updateTimeSensitiveFunctions, 1000)
+// setInterval(updateTimeSensitiveFunctions, 1000)
 
 // Function to update scheduler based on current time
 function updateTimeSensitiveFunctions(){
