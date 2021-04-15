@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 // Function to update scheduler based on current time
 function updateTimeSensitiveFunctions(){
-
+    now = moment();
     displayCurrentDateAndTime();
     colorCode();
 
