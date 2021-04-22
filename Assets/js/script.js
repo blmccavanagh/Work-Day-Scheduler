@@ -54,12 +54,25 @@ for (let i = 8; i <= 18; i++) {
 }
 
 let scheduleInfo = "";
+
+const save = document.getElementsByClassName('saveBtn');
+
 // Function to display schedule
 
 // Function to retrieve schedule
 // Assign any saved text to appropriate hour in scheduler
 
+// window.localStorage.getItem();
+
 // Function to save schedule
 // Save text input when save button is clicked
 // Add click event for save buttons
 // Click event stores text input in local storage
+$(save).click(function (e) {
+    e.preventDefault();
+
+    let hourIdKey = e.currentTarget.parentElement.children[1].id;
+    let userInput = e.currentTarget.parentElement.children[1].value;
+
+    localStorage.setItem(hourIdKey, userInput);
+});
