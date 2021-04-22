@@ -37,7 +37,7 @@ function displayCurrentDateAndTime(){
 function colorCode(){
     // Use the value from now.format
     // Convert string value of hour to number value
-    let currentTime = parseInt(now.format('h'));
+    let currentTime = parseInt(now.format('HH'));
     // Create for loop
     // if less than current time .past
     // if current time .present
@@ -53,6 +53,7 @@ for (let i = 8; i <= 18; i++) {
 }
 }
 
+let scheduleInfo = "";
 // Function to display schedule
 
 // Function to retrieve schedule
