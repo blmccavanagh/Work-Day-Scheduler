@@ -6,6 +6,7 @@ $(document).ready(function(){
 
     updateTimeSensitiveFunctions();
     setInterval(updateTimeSensitiveFunctions, 1000);
+    load();
 
 });
 
@@ -53,21 +54,25 @@ for (let i = 8; i <= 18; i++) {
 }
 }
 
-let scheduleInfo = "";
-
-const save = document.getElementsByClassName('saveBtn');
-
 // Function to display schedule
 
 // Function to retrieve schedule
 // Assign any saved text to appropriate hour in scheduler
 
-// window.localStorage.getItem();
+let container = document.getElementsByClassName("container");
+
+function load() {
+    for (let i = 0; i < 11; i++) {
+        var element = container[0].children[i].children[1];
+    }
+}
 
 // Function to save schedule
 // Save text input when save button is clicked
 // Add click event for save buttons
 // Click event stores text input in local storage
+const save = document.getElementsByClassName('saveBtn');
+
 $(save).click(function (e) {
     e.preventDefault();
 
