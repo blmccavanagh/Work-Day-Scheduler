@@ -44,11 +44,11 @@ function colorCode(){
     // if more than current time .future
 for (let i = 8; i <= 18; i++) {
     if (i < currentTime) {
-        $('#' + i).addClass("past");
+        $('#h' + i).addClass("past");
     } else if (i === currentTime) {
-        $('#' + i).addClass("present");
+        $('#h' + i).addClass("present");
     } else {
-        $('#' + i).addClass("future");
+        $('#h' + i).addClass("future");
     }
 }
 }
