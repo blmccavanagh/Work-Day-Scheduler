@@ -10,9 +10,6 @@ $(document).ready(function(){
 
 });
 
-// Function to update time
-// setInterval(updateTimeSensitiveFunctions, 1000)
-
 // Function to update scheduler based on current time
 function updateTimeSensitiveFunctions(){
     now = moment();
@@ -59,11 +56,21 @@ for (let i = 8; i <= 18; i++) {
 // Function to retrieve schedule
 // Assign any saved text to appropriate hour in scheduler
 
-let container = document.getElementsByClassName("container");
+
+// Original code for get local storage:
+// let container = document.getElementsByClassName("container");
+// function load() {
+//     for (let i = 0; i < 11; i++) {
+//         var element = container[0].children[i].children[1];
+//     }
+// }
 
 function load() {
-    for (let i = 0; i < 11; i++) {
-        var element = container[0].children[i].children[1];
+    for (let i = 8; i < 18; i++) {
+        let hourId = ("h" + i);
+        if (localStorage.getItem(hourId)) {
+        document.getElementById(i).innerHTML = localStorage.getItem(hourId);
+        }
     }
 }
 
