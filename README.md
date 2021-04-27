@@ -4,6 +4,8 @@
 
 ### The work day scheduler displays the information saved by the user, allowing them to return to the website throughout the day to view, manage and update their schedule as required.
 
+---
+
 ## Motivation & Research
 
 I was motivated to develop this website to serve as a resource to aid with the management and scheduling of organisational tasks, while also allowing me to apply my developing JavaScript and jQuery language skills, and my knowledge of web APIs alongside implementing a CSS framework.
@@ -21,8 +23,8 @@ In developing this website I used a combination of HTML, CSS and a CSS framework
 * JavaScript & jQuery
     * With a particular focus on localStorage functions
 * Web APIs :
-    * MomentJS https://momentjs.com/
-    * Web Storage https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+    * MomentJS : https://momentjs.com/
+    * Web Storage : https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 
 ### Graphic design and branding
 The initial design and framework of the website was provided from a prexisting style sheet template, combined with the Bootstrap framework. To make the project unique and to better align the site with my personal brand I performed further customisations of the CSS styling, creating a cohesive brand across my application portfolio. Customisations included the use of of keyframe animations, customised fonts and the addition of an on-brand footer with links to contact information, including my Github profile and a download link of my current resume.
@@ -38,14 +40,16 @@ Application of the aquired development skills allowed for successful implementat
 
 I aim to continue to develop this website to include:
 * An enhanced design, refining and improving the layout and asthetics to enhance user experience.
-* Resposive web design to allow the application to function optimally on different devices and screen sizes.
-* Further refinement of the inputs 
- Refine inputs to be more specifically time sensitive - eg meeting from 0930-1030 or 1145-1200
-* Time zone select - focussing on users based in Australia, the ability to change between time zones with just one click bc meetings based in the eastern states on AEST but those working in and on AWST
-* Alerts / reminders
+* Resposive web design to allow the application to function optimally across multiple devices and screen sizes.
+* User refinable time inputs, allowing for the greater flexibility to book appointments or events in shorter time segments - eg meeting from 0930-1030 or 1145-1200.
+* Time zone awareness within the application, allowing users to adjust timezones for their events, to better cater to meetings or events that occur across multiple time zones.
+* Alerts and reminder functionality to notify the user about upcoming events or appointments they have previously booked within the application.
 
+<div align="center">
 
 **Thank you for visiting.**
+
+</div>
 
 ### Repository Link:
 
