@@ -69,7 +69,7 @@ function load() {
     for (let i = 8; i < 18; i++) {
         let hourId = ("h" + i);
         if (localStorage.getItem(hourId)) {
-        document.getElementById(i).innerHTML = localStorage.getItem(hourId);
+        document.getElementById(hourId).innerHTML = localStorage.getItem(hourId);
         }
     }
 }
