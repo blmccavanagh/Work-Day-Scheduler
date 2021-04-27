@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Train+One&family=Homemade+Apple&family=Raleway+Dots&family=Major+Mono+Display&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@300&family=Raleway+Dots&display=swap');
 
 :root {
   --neon-text-color: #FC05F8;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -17,6 +17,7 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  font-weight: bold;
 }
 
 .jumbotron {
@@ -29,6 +30,24 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+}
+
+#header {
+  /* gradiet Varaiable */
+  --gradient: linear-gradient(45deg, #888888, #999999, #aaaaaa, #bbbbbb, #cccccc, #dddddd, #eeeeee, #ffffff, #999999);
+  background-image:var(--gradient);
+  background-size: 600%;
+  background-position: left;
+  animation: grad-bg 30s infinite alternate;
+}
+
+@keyframes grad-bg {
+  0%{
+      background-position: left;
+  }
+  100%{
+      background-position: right;
+  }
 }
 
 .time-block{
