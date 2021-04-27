@@ -1,13 +1,10 @@
 let now = moment();
 
-// Function to run when page is loaded
-// - when document is ready
+// Function to run when when document is ready
 $(document).ready(function(){
-
     updateTimeSensitiveFunctions();
     setInterval(updateTimeSensitiveFunctions, 1000);
     load();
-
 });
 
 // Function to update scheduler based on current time
@@ -15,7 +12,6 @@ function updateTimeSensitiveFunctions(){
     now = moment();
     displayCurrentDateAndTime();
     colorCode();
-
 }
 
 // Display current date and time in the header
@@ -31,7 +27,6 @@ function displayCurrentDateAndTime(){
 // - add class .present
 // Green for future hours
 // - add class .future
-
 function colorCode(){
     // Use the value from now.format
     // Convert string value of hour to number value
@@ -40,31 +35,19 @@ function colorCode(){
     // if less than current time .past
     // if current time .present
     // if more than current time .future
-for (let i = 8; i <= 18; i++) {
-    if (i < currentTime) {
-        $('#h' + i).addClass("past");
-    } else if (i === currentTime) {
-        $('#h' + i).addClass("present");
-    } else {
-        $('#h' + i).addClass("future");
+    for (let i = 8; i <= 18; i++) {
+        if (i < currentTime) {
+            $('#h' + i).addClass("past");
+        } else if (i === currentTime) {
+            $('#h' + i).addClass("present");
+        } else {
+            $('#h' + i).addClass("future");
+        }
     }
 }
-}
 
-// Function to display schedule
-
-// Function to retrieve schedule
+// Function to retrieve and display schedule
 // Assign any saved text to appropriate hour in scheduler
-
-
-// Original code for get local storage:
-// let container = document.getElementsByClassName("container");
-// function load() {
-//     for (let i = 0; i < 11; i++) {
-//         var element = container[0].children[i].children[1];
-//     }
-// }
-
 function load() {
     for (let i = 8; i < 18; i++) {
         let hourId = ("h" + i);
