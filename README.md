@@ -69,7 +69,7 @@ I aim to continue to develop this website to include:
 
 </div>
 
-![Work Day Scheduler Demo](assets/images/README/work-day-scheduler-gif.gif) 
+![Work Day Scheduler Desktop Screen Capture](assets/images/README/work-day-scheduler-desktop-screen-capture.jpg)
 
 ---
 
@@ -79,6 +79,6 @@ I aim to continue to develop this website to include:
 
 </div>
 
-![Text input, save function, browser close demo](assets/images/README/work-day-scheduler-desktop-screen-capture.jpg)
+![Work Day Scheduler Demo](assets/images/README/work-day-scheduler-gif.gif)
 
 ---
