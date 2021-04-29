@@ -8,6 +8,28 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url(../images/background-image-1.jpg);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 4rem;
+  color: #fff;
+  border-bottom: 10px solid #55555580;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+header p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.handwriting {
+  font-family: 'Homemade Apple', cursive;
 }
 
 textarea{
@@ -20,26 +42,26 @@ textarea{
   font-weight: bold;
 }
 
-.jumbotron {
+/* .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
+  border-radius: 6rem 0;
+  border-bottom: 10px solid #55555580;
+} */
 
 .description{
   white-space: pre-wrap;
 }
 
-#header {
+/* #header {
   /* gradiet Varaiable */
-  --gradient: linear-gradient(45deg, #ffffff, #888888, #999999, #aaaaaa, #bbbbbb, #cccccc, #dddddd, #eeeeee, #ffffff);
+  /* --gradient: linear-gradient(45deg, #ffffff, #888888, #999999, #aaaaaa, #bbbbbb, #cccccc, #dddddd, #eeeeee, #ffffff);
   background-image:var(--gradient);
   background-size: 600%;
   background-position: left;
   animation: grad-bg 30s infinite alternate;
-}
+} */
 
 @keyframes grad-bg {
   0%{
@@ -51,8 +73,8 @@ textarea{
 }
 
 #currentDay {
-  border: #333333 dotted 1px;
-  border-radius: 1rem;
+  border: #555555 dotted 1px;
+  border-radius: 6rem 2rem;
   padding: 5px;
 }
 
@@ -68,10 +90,11 @@ textarea{
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: rgb(252,	5,	248, 0.3);
+  color: #fff;
   border-top: 1px dashed #000000;
   padding-top: 25px;
+  border-radius: 15px 0 0 15px;
 }
 
 .past {
@@ -93,20 +116,26 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  /* background-color: #06AED5; */
+  background-color: rgb(5, 252, 149, 0.5);
   color: white;
 }
 
+
+.saveBtn:hover {
+  background-color: rgb(5, 252, 149, 0.1);
+  color: rgb(21, 255, 0);
+}
+
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+  transform:scale(1.8);
+  opacity: 0;
 }
 
 footer {
-  font-family: 'Homemade Apple', cursive;
   font-size: 20px;
-  margin-top: 25px;
-  width: 100%;
+  margin: 25px auto;
+  width: 75%;
   text-align: center;
   background-color: #000000;
   color: white;
@@ -115,6 +144,23 @@ footer {
 
 .shadow {
   text-shadow: 3px 3px rgb(0, 0, 0)
+}
+
+
+.glowHeader {
+  color: #fff;
+  -webkit-animation: glow2 10s ease-in-out infinite alternate;
+  -moz-animation: glow2 10s ease-in-out infinite alternate;
+  animation: glow2 10s ease-in-out infinite alternate;
+}
+
+@keyframes glow2 {
+  from {
+    text-shadow: 0 0 3px #fff, 0 0 4px #4e0166, 0 0 5px #4e0166, 0 0 6px #4e0166, 0 0 7px #4e0166, 0 0 8px #4e0166, 0 0 9px #4e0166;
+  }
+  to {
+      text-shadow: 0 0 3px #fff, 0 0 4px #4e0166, 0 0 5px #4e0166, 0 0 6px #4e0166, 0 0 7px #4e0166, 0 0 8px #4e0166, 0 0 9px #4e0166;
+  }
 }
 
 .glow {
@@ -135,11 +181,11 @@ footer {
 
 #footer {
   /* gradiet Varaiable */
-  --gradient: linear-gradient(45deg, #000000, #333333, #555555, #777777, #999999, #bbbbbb, #dddddd, #ffffff, #000000);
+  --gradient: linear-gradient(45deg, #000000, #111111, #333333, #555555, #777777);
   background-image:var(--gradient);
   background-size: 600%;
   background-position: left;
-  animation: grad-bg 40s infinite alternate;
+  animation: grad-bg 10s infinite alternate;
 }
 
 footer span:nth-of-type(2){
